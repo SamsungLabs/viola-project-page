@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Video to LiDAR Alignment">
+  <meta property="og:title" content="VioLA: Aligning Videos to 2D LiDAR Scans" />
+  <meta property="og:description" content="VioLA: Aligning Videos to 2D LiDAR Scans" />
+  <meta property="og:url" content="https://samsunglabs.github.io/VioLA>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property=" og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="VioLA: Aligning Videos to 2D LiDAR Scans">
+  <meta name="twitter:description" content="Video to LiDAR Alignment">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>VioLA: Aligning Videos to 2D LiDAR Scans</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><a style="color:black;">VioLA</a>: <a style="color:black;">Aligning
+                Videos to 2D LiDAR Scans</a> </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/junjee.jpeg" alt="">
+                </div>
+                <a href="https://www.linkedin.com/in/jun-jee-chao-2b210915b" target="_blank">Jun-Jee<br>Chao*</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/selim.jpeg" alt="">
+                </div>
+                <a href="https://ksengin.github.io/" target="_blank">Selim<br>Engin*</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/nikhil.jpeg" alt="">
+                </div>
+                <a href="https://www.linkedin.com/in/nikhilcd" target="_blank">Nikhil<br>Chavan-Dafle</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/bhoram.jpeg" alt="">
+                </div>
+                <a href="https://www.linkedin.com/in/bhoram-lee" target="_blank">Bhoram<br>Lee</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/isler.jpg" alt="">
+                </div>
+                <a href="https://www-users.cse.umn.edu/~isler/" target="_blank">Volkan<br>Isler</a>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">* indicates equal contribution</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Samsung AI Center - New York</span>
+            </div>
+
+            <!-- ArXiv Link -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2311.04783" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2311.04783" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/SamsungLabs/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+
+
+                </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div style="text-align: center;">
+          <video poster="" id="video1" autoplay loop controls muted width="70%">
+            <source src="static/videos/viola_registration.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content has-text-justified">
+          We introduce <b>VioLA</b>, a method for aligning user-captured videos (either RGB-D or posed RGB) to 2D LiDAR
+          maps. VioLA allows augmenting LiDAR maps with semantics, as well as registering multiple independent videos to
+          each
+          other using the LiDAR map as a common coordinate frame.
+          <br>
+          <br>
+          We highlight that with VioLA, we can register videos taken from different users, days and locations. The
+          animation above shows the registration process of several videos recorded by a smartphone.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title has-text-centered">VioLA Overview</h2>
+        <div style="text-align: center;">
+          <img src="./static/images/viola_teaser.png" alt="VioLA" width="70%">
+        </div>
+        <div style="text-align: center;">
+          <span class="VioLA">VioLA</span> aligns an RGB-D video (or an RGB video tagged with poses) recorded from a
+          local section of a scene to the 2D
+          LiDAR map of the entire environment. After registration, the LiDAR map can be augmented with texture, 3D
+          geometry and
+          semantics extracted from the videos.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title has-text-centered"></h2>
+        <div class="content has-text-justified">
+          VioLA starts with building a semantic map of the local scene from the image sequence, then extracts points at
+          a fixed height for registering to the LiDAR map. Due to reconstruction errors or partial coverage of the
+          camera scan, the reconstructed semantic map may not contain sufficient information for registration. To
+          address this problem, VioLA makes use of a pre-trained text-to-image inpainting model paired with a depth
+          completion model for filling in the missing scene content in a geometrically consistent fashion to support
+          pose registration.
+          <br>
+          <br>
+        </div>
+      </div>
+  </section>
+
+
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div style="text-align: center;">
+          <img src="./static/images/office_scans_fused.png" alt="VioLA_office" width="70%">
+        </div>
+        <div style="text-align: center;">
+          VioLA can be used to fuse 3D reconstructions obtained over multiple scans by registering the videos to the same LiDAR map.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div>
+          The following video showcases an application of VioLA and demonstrates its capabilities:
+        </div>
+        <video poster="" id="video1" controls muted width="100%">
+          <source src="static/videos/VioLA-Short.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title has-text-centered"></h2>
+        <div class="content has-text-justified">
+          We found that reconstructed points at the height of the LiDAR scan are critical for registration success.
+          However, these points might be missing due to the video not capturing the lower part of the scene or the SLAM
+          algorithm suffering from matching featureless points. To provide this missing information, we proposed a
+          strategy for selecting virtual
+          viewpoints and a scene completion module that performs inpainting and 3D lifting from the chosen viewpoints.
+          We evaluated VioLA on two real-world RGB-D benchmarks, as well as a self-captured dataset of
+          a large office scene. Notably, our proposed scene completion module improves the pose registration performance
+          by up to 20%.
+          <br>
+          <br>
+
+          In the animations below, we show 1) the reconstruction from an RGB-D image sequence taken from the Redwood
+          dataset,
+          2) completed point cloud using VioLA's scene completion module that grounds the floor to estimated floor
+          surface, and 3)
+          scene completion without floor grounding.
+          <!-- <br> -->
+          <!-- <br> -->
+        </div>
+      </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-chair-tp">
+            <center>
+              <h2 style="font-size:20px !important;" class="title has-text-centered">Dense reconstruction of an input
+                video</h2>
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline width="50%" height="50%">
+                <source src="./static/videos/loft_input_recon.mp4" type="video/mp4">
+              </video>
+            </center>
+          </div>
+          <div class="item item-chair-tp">
+            <center>
+              <h2 style="font-size:20px !important;" class="title has-text-centered">Completed scene geometry with floor
+                grounding</h2>
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline width="50%" height="50%">
+                <source src="./static/videos/loft_completed_with_grounding.mp4" type="video/mp4">
+              </video>
+            </center>
+          </div>
+          <div class="item item-chair-tp">
+            <center>
+              <h2 style="font-size:20px !important;" class="title has-text-centered">Completed scene geometry without
+                grounding</h2>
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline width="50%" height="50%">
+                <source src="./static/videos/loft_completed_no_grounding.mp4" type="video/mp4">
+              </video>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <br>
+    <br>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+
+        <h2 class="title has-text-centered">VioLA Method Details</h2>
+
+        <video poster="" id="video1" controls muted height="100%">
+          <source src="static/videos/VioLA-Video.mp4" type="video/mp4">
+        </video>
+
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+
+
+  <!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{,
+  title={{VioLA: Aligning Videos to 2D LiDAR Scans}},
+  author={},
+  booktitle={},
+  year={2023}
+}</code></pre>
+    </div>
+</section> -->
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img
+                  alt="Creative Commons License" style="border-width:0"
+                  src="https://licensebuttons.net/l/by-nc/3.0/88x31.png" />
+              </a><br />This work is licensed under a <a rel="license"
+                href="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons Attribution-NonCommercial 4.0
+                International License</a> (CC-BY-NC).
+            </p>
+            <p>
+              This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io"
+                target="_blank">NeRFies</a>. We sincerely thank the authors for developing and open-sourcing this
+              template.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
